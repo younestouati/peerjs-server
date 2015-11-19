@@ -1,5 +1,10 @@
 [![Build Status](https://travis-ci.org/peers/peerjs-server.png?branch=master)](https://travis-ci.org/peers/peerjs-server)
 
+# Purpose of this fork
+The sole purpose of this fork is to ensure that the peer server doesn't choke on heartbeat messages sent from the client. Heartbeats need
+to be sent in order to keep the websocket connection live on Heroku. Otherwise Heroku will terminate the connection after 55 seconds of
+inactivity.
+
 # PeerServer: A server for PeerJS #
 
 PeerServer helps broker connections between PeerJS clients. Data is not proxied through the server.
