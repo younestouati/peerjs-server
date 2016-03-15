@@ -1,9 +1,12 @@
 [![Build Status](https://travis-ci.org/peers/peerjs-server.png?branch=master)](https://travis-ci.org/peers/peerjs-server)
 
 # Purpose of this fork
-The sole purpose of this fork is to ensure that the peer server doesn't choke on heartbeat messages sent from the client. Heartbeats need
+The purpose of this fork is to ensure that the peer server doesn't choke on heartbeat messages sent from the client. Heartbeats need
 to be sent in order to keep the websocket connection live on Heroku. Otherwise Heroku will terminate the connection after 55 seconds of
 inactivity.
+
+Also, the randomId method in utils.js has been changed, so it produces more human friendly ids (digits only), that are easier to
+type.
 
 # PeerServer: A server for PeerJS #
 
