@@ -13,12 +13,12 @@
   "author": "Michelle Bu, Eric Zhang",
   "license": "MIT",
   "dependencies": {
+    "@phame/phame-shared": "^0.0.1",
     "body-parser": "^1.9.0",
+    "cors": "~2.5.0",
     "express": "^4.9.8",
     "optimist": "~0.6.1",
-    "ws": "~0.4.25",
-    "cors": "~2.5.0",
-    "@phame/phame-core": "~0.0.10"
+    "ws": "~0.4.25"
   },
   "devDependencies": {
     "expect.js": "*",
